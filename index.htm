@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comparison Chart | View</title>
+
+    <!-- Stylesheets -->
+    
+    <link rel="stylesheet" type="text/css" href="/base-styles.css">
+    <link rel="stylesheet" type="text/css" href="/chart-styles.css">
+
+    <!-- Javascript -->
+	<script type="text/javascript" src="/comparison-chart.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event) {
+		    var chart = comparisonChart('/test-packages.json', 'chart-container');
+		});
+	</script>
+	
+</head>
+<body>
+	<div id="main-container">
+		<div id="chart-container"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+	"config": {},
+	"0": {
+		"package_name": "Test 1",
+		"Feature 1": true,
+		"Is In Both": "5"
+	},
+	"1": {
+		"package_name": "Test 2",
+		"Feature 1": true,
+		"Feature 2": true,
+		"Is In Both": "7",
+		"Choose one": [
+			"Option 1",
+			"Option 2",
+			"Option 3"
+		]
+	}
+}
