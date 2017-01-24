@@ -1,0 +1,13 @@
+#main-gen-table {
+    border-collapse: collapse;
+}
+
+#main-gen-table tr,
+#main-gen-table td {
+    border: 1px solid #000;
+}
+
+#main-gen-table td {
+    min-height: 15px;
+    min-width: 15px;
+}
