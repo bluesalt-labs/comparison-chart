@@ -7,12 +7,13 @@
     <title>Comparison Chart | View</title>
 
     <!-- Stylesheets -->
-    
-    <link rel="stylesheet" type="text/css" href="/base-styles.css">
-    <link rel="stylesheet" type="text/css" href="/chart-styles.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/base-styles.css" />
+    <link rel="stylesheet" type="text/css" href="/chart-styles.css" />
 
     <!-- Javascript -->
 	<script type="text/javascript" src="/comparison-chart.js"></script>
+    <script type="text/javascript" src="/bower_components/lodash/dist/lodash.min.js"></script>
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function(event) {
 		    var chart = comparisonChart.init('/package-data.json', 'chart-container');
