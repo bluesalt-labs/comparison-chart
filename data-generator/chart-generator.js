@@ -220,13 +220,14 @@ var chartGenerator = (function() {
 
         if(numPackages > 0 && numPackageItems > 0) {
             for(var pkgID = 0; pkgID < numPackages; pkgID++) {
-                data.packages[pkgID]['package_name'] = document.getElementById('input-package-head-' + pkgID).value;
+                data.packages[pkgID]['package_name'] = document.getElementById('input-package-head-' + pkgID).value.trim();
 
                 for(var itemID = 0; itemID < numPackageItems; itemID++) {
                     var packageItemName = document.getElementById('input-item-head-' + itemID).value;
 
                     if(packageItemName.length > 0) {
-                        var packageItemValue = document.getElementById('input-item-' + pkgID + '-' + itemID).value;
+                        var packageItemValue = document.getElementById('input-item-' + pkgID + '-' + itemID).value.trim();
+                        if( (packageItemValue).toLower() == 'true') { packageItemValue = true; }
 
                         if(packageItemValue.length > 0) {
                             data.packages[pkgID][packageItemName] = packageItemValue;
